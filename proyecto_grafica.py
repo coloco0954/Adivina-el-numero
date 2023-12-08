@@ -41,10 +41,10 @@ def verificar_numero():
         numero = int(numero_usuario.get())
         
         if numero < numero_maquina:
-            tkmb.showinfo("Pista", f"El numero es menor Digite un numero mayor que {numero}")
+            tkmb.showinfo("Pista", f"El numero es mas alto. Digite un numero mayor que {numero}")
             intentos += 1
         elif numero > numero_maquina:
-            tkmb.showinfo("Pista", f"El numero es mayor. Digite un numero menor que {numero}")
+            tkmb.showinfo("Pista", f"El numero es mas bajo. Digite un numero menor que {numero}")
             intentos += 1
         else:
             tkmb.showinfo("Felicidades", f"Has adivinado el numero en {intentos} intentos")
